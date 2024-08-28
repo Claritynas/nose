@@ -6,6 +6,8 @@ urlpatterns=[
     path('',views.index,name='index'),
     path('login',views.login,name='login'),
     path('blog',views.blog,name='blog'),
-    path('insurance',views.insurance,name='insurance'),
-    path('registration',views.registration,name='registration')
+    path('images',views.images,name='images'),
+    path('registration',views.registration,name='registration'),
+    path('logout',views.logout,name='logout'),
+    path('post/<str:pk>',views.post,name='post')
 ]

@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <meta name="viewport" content="initial-scale=1, maximum-scale=1">
       <!-- site metas -->
-      <title>Contact Us</title>
+      <title>STUDY PAGE</title>
       <meta name="keywords" content="">
       <meta name="description" content="">
       <meta name="author" content="">
@@ -33,7 +33,7 @@
          <div class="container">
             <div class="row">
                <div class="col-md-4">
-                  <div class="call_text"><a href="#"><img src="{% static 'images/call-icon.png' %}"><span class="padding_15">+0123456789</span></div>
+                  <div class="call_text"><a href="tel:+233205153645"><img src="{%static 'images/call-icon.png' %}"><span class="padding_15">+233205153645</span></div>
                </div>
                <div class="col-md-4">
                   <div class="social_icon">
@@ -47,7 +47,7 @@
                   </div>
                </div>
                <div class="col-md-4">
-                  <div class="call_text_1"><a href="#"><img src="{% static 'images/mail-icon.png' %}"><span class="padding_15">demo@gmail</span></div>
+                  <div class="call_text_1"><a href="mailto:alimasalam02@gmail.com"><img src="{%static 'images/mail-icon.png' %}"><span class="padding_15">Sokolonashiru@yahoo.com</span></div>
                </div>
             </div>
          </div>
@@ -57,7 +57,7 @@
       <div class="header_section header_bg">
          <div class="container-fluid">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <a class="navbar-brand"href="index.html"><img src="{% static 'images/logo.png' %}"></a>
+               <a class="navbar-brand"href="/"><h3 class="sitename">UENR STUDY PAGE</h3></a>
                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
                </button>
@@ -69,14 +69,10 @@
                      <li class="nav-item">
                         <a class="nav-link" href="login">login</a>
                      </li>
+                    
+                     
                      <li class="nav-item">
-                        <a class="nav-link" href="insurance.html">Insurance Policy</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact">Contact Us</a>
+                        <a class="nav-link" href="#contact">Contact Us</a>
                      </li>      
                   </ul>
                   <form class="form-inline my-2 my-lg-0">
@@ -99,10 +95,16 @@
                <div class="col-sm-12">
                   <h1 class="contact_taital">Sign Up <span style="color: #232222;">Here</span></h1>
                </div>
+               {% for message in messages %}
+               <div class="col-sm-12">
+                  <p class="messages1"> {{message}}</p>
+               </div>
+               {% endfor  %}
             </div>
          </div>
       </div>
       <div class="contact_section_2">
+         
          <div class="container">
             <div class="row">
                <div class="col-md-12">
@@ -128,7 +130,7 @@
                            </div>
                         </div>
                         <div class="btn_main">
-                           <button type="submit" name="submitr">Sign Up </button>
+                           <button id="submitr" type="submit" name="submitr">Sign Up </button>
                         </div>
                      </form>
                   </div>
@@ -141,49 +143,43 @@
       <div class="footer_section layout_padding">
          <div class="container">
             <div class="row">
-               <div class="col-lg-3 col-sm-6">
-                  <div class="footer_logo"><a href="index.html"><img src="{% static 'images/footer-logo.png' %}"></a></div>
-               </div>
+              
                <div class="col-lg-3 col-sm-6">
                   <h3 class="useful_text">Useful Link</h3>
                   <div class="footer_menu">
                      <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="insurances.html">Insurances</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li class="active"><a href="contact.html">Contact Us</a></li>
+                        <li><a href="registration">Sign Up</a></li>
+                        
+                        
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="#contact">Contact Us</a></li>
                      </ul>
                   </div>
                </div>
-               <div class="col-lg-3 col-sm-6">
+               <div id="contact" class="col-lg-3 col-sm-6">
                   <h1 class="useful_text">Contact Us</h1>
                   <div class="location_text">
                      <ul>
                         <li>
                            <a href="#">
-                           <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_10">Location</span>
+                           <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_10">Location Berekum</span>
                            </a>
                         </li>
                         <li>
                            <a href="#">
-                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call : +01 1234567890</span>
+                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call : +233205153645</span>
                            </a>
                         </li>
                         <li>
                            <a href="#">
-                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">Email : demo@gmail.com</span>
+                              <div class="call_text_1"><a href="mailto:alimasalam02@gmail.com"><span class="padding_15">Sokolonashiru@yahoo.com</span></div>
                            </a>
                         </li>
                      </ul>
                   </div>
                </div>
                <div class="col-lg-3 col-sm-6">
-                  <h2 class="useful_text">Newsletter</h2>
-                  <div class="form-group">
-                     <textarea class="update_mail" placeholder="Enter Your Email" rows="5" id="comment" name="Enter Your Email"></textarea>
-                     <div class="subscribe_bt"><a href="#">Subscribe</a></div>
-                  </div>
+                 
                   <div class="footer_social_icon">
                      <ul>
                         <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>

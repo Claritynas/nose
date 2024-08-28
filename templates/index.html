@@ -1,453 +1,447 @@
 <!DOCTYPE html>
 <html>
-   {% load static %}
-   <head>
-      <!-- basic -->
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <!-- mobile metas -->
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-      <!-- site metas -->
-      <title>DATABASE</title>
-      <meta name="keywords" content="">
-      <meta name="description" content="">
-      <meta name="author" content="">
-      <!-- bootstrap css -->
-      <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
-      <!-- style css -->
-      <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
-      <!-- Responsive-->
-      <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
-      <!-- fevicon -->
-      <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
-      <!-- Scrollbar Custom CSS -->
-      <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
-      <!-- Tweaks for older IEs-->
-      <link rel="stylesheet" href="{% static 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' %}">
-   </head>
-   <body>
-      <!-- header_to section start -->
-      <div class="header_top">
-         <div class="container">
-            <div class="row">
-               
-               <div class="col-md-4">
-                  <div class="call_text"><a href="#"><img src="{%static 'images/call-icon.png' %}"><span class="padding_15">+233205153645</span></div>
-               </div>
-               <div class="col-md-4">
-                  <div class="social_icon">
-                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="call_text_1"><a href="#"><img src="{%static 'images/mail-icon.png' %}"><span class="padding_15">Amosapraku1@gmail.com</span></div>
-               </div>
+{% load static %}
+
+<head>
+   <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   <title>STUDY PAGE</title>
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+   <!-- bootstrap css -->
+   <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+   <!-- style css -->
+   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+   <!-- Responsive-->
+   <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
+   <!-- fevicon -->
+   <link rel="icon" href="{% static 'images/fevicon.png' %}" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="{% static 'css/jquery.mCustomScrollbar.min.css' %}">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="{% static 'https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css' %}">
+</head>
+
+<body>
+   <!-- header_to section start -->
+   <div class="header_top">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-md-4">
+               <div class="call_text"><a href="tel:+233205153645"><img src="{%static 'images/call-icon.png' %}"><span
+                        class="padding_15">+233205153645</span></div>
             </div>
-         </div>
-      </div>
-      <!-- header_to section end -->
-      <!-- header section start -->
-      <div class="header_section">
-         <div class="container-fluid">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-               <h1 class="data">DATABASE CLASS</h1>
-               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-               </button>
-               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav ml-auto">
-                     <li class="nav-item">
-                        <a class="nav-link" href="/" >Home</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="login" >Login</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="insurance.html">Insurance Policy</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                     </li>
-                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                     </li>      
+            <div class="col-md-4">
+               <div class="social_icon">
+                  <ul>
+                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
                   </ul>
-                  <form class="form-inline my-2 my-lg-0">
-                    <div class="login_bt">
-                        <ul>
-                           <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                           <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
-                        </ul>
-                     </div>
-                  </form>
-               </div>
-            </nav>
-         </div>
-         <!-- banner section start --> 
-         <div class="banner_section layout_padding">
-            <div class="container-fluid">
-               <div id="my_slider" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <div class="banner_taital_main">
-                                 <h1 class="banner_taital">insurance policy</h1>
-                                 <p class="banner_text">content of a page when looking at its layout. The point of using Lorem Ipsum </p>
-                                 <div class="btn_main">
-                                    <div class="started_text"><a href="#">Read More</a></div>
-                                    <div class="started_text active"><a href="#">Get A Quote</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <div class="banner_taital_main">
-                                 <h1 class="banner_taital">insurance policy</h1>
-                                 <p class="banner_text">content of a page when looking at its layout. The point of using Lorem Ipsum </p>
-                                 <div class="btn_main">
-                                    <div class="started_text"><a href="#">Read More</a></div>
-                                    <div class="started_text active"><a href="#">Get A Quote</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-sm-12">
-                              <div class="banner_taital_main">
-                                 <h1 class="banner_taital">insurance policy</h1>
-                                 <p class="banner_text">content of a page when looking at its layout. The point of using Lorem Ipsum </p>
-                                 <div class="btn_main">
-                                    <div class="started_text"><a href="#">Read More</a></div>
-                                    <div class="started_text active"><a href="#">Get A Quote</a></div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#my_slider" role="button" data-slide="prev">
-                  <i class="fa fa-angle-left"></i>
-                  </a>
-                  <a class="carousel-control-next" href="#my_slider" role="button" data-slide="next">
-                  <i class="fa fa-angle-right"></i>
-                  </a>
                </div>
             </div>
-         </div>
-         <!-- banner section end -->
-      </div>
-      <!-- header section end -->
-      <!-- about section start -->
-      <div class="about_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="about_taital">About Our Company</div>
-                  <p class="about_text">page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed</p>
-               </div>
-            </div>
-            <div class="about_section_2">
-               <div class="row">
-                  <div class="col-md-4 padding_0">
-                     <div class="hover01 column">
-                        <figure><img src="{%static 'images/about-img1.png' %}"></figure>
-                     </div>
-                     <div class="emergencey_bt"><a href="#">Emergency Service</a></div>
-                  </div>
-                  <div class="col-md-4 padding_0">
-                     <div class="hover01 column">
-                        <figure><img src="{%static 'images/about-img2.png' %}"></figure>
-                     </div>
-                     <div class="emergencey_bt active"><a href="#">Solutions</a></div>
-                  </div>
-                  <div class="col-md-4 padding_0">
-                     <div class="hover01 column">
-                        <figure><img src="{%static 'images/about-img3.png' %}"></figure>
-                     </div>
-                     <div class="emergencey_bt"><a href="#">Agents</a></div>
-                  </div>
-               </div>
-            </div>
-            <div class="read_bt"><a href="#">Read More</a></div>
-         </div>
-      </div>
-      <!-- about section end -->
-      <!-- blog section start -->
-      <div class="blog_section">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="col-md-7 padding_right0">
-                  <div class="blog_img"><img src="{%static 'images/insurance-img.png' %}"></div>
-               </div>
-               <div class="col-md-5">
-                  <h1 class="blog_taital">Happiness With Insurance</h1>
-                  <p class="blog_text">page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposedpage when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed</p>
-                  <div class="readmore_bt"><a href="#">Read More</a></div>
+            <div class="col-md-4">
+               <div class="call_text_1"><a href="mailto:alimasalam02@gmail.com"><img
+                        src="{%static 'images/mail-icon.png' %}"><span class="padding_15">Sokolonashiru@yahoo.com</span>
                </div>
             </div>
          </div>
       </div>
-      <!-- blog section end -->
-      <!-- insurance section start -->
-      <div class="insurance_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="insurance_taital">Our Insurances</h1>
-                  <p class="insurance_text">page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed</p>
-               </div>
-            </div>
-            <div class="insurance_section_2">
-               <div class="row">
-                  <div class="col-md-6">
-                     <div class="insurance_box active">
-                        <div class="car_img"><img src="{%static 'images/car-icon.png' %}"></div>
-                        <h3 class="car_text">Car Insurance</h3>
-                        <p class="fact_text">fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="insurance_box">
-                        <div class="car_img"><img src="{%static 'images/flight-icon.png' %}"></div>
-                        <h3 class="car_text">Travel Insurance</h3>
-                        <p class="fact_text">fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="insurance_section_2">
-               <div class="row">
-                  <div class="col-md-6">
-                     <div class="insurance_box">
-                        <div class="car_img"><img src="{%static 'images/house-icon.png' %}"></div>
-                        <h3 class="car_text">Home Insurance</h3>
-                        <p class="fact_text">fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
-                     </div>
-                  </div>
-                  <div class="col-md-6">
-                     <div class="insurance_box">
-                        <div class="car_img"><img src="{%static 'images/man-icon.png' %}"></div>
-                        <h3 class="car_text">Life Insurance</h3>
-                        <p class="fact_text">fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has</p>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="read_bt_1"><a href="#">Read More</a></div>
-         </div>
-      </div>
-      <!-- insurance section end -->
-      <!-- contact section start -->
-      <div class="contact_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-sm-12">
-                  <h1 class="contact_taital">Get In <span style="color: #232222;">Touch</span></h1>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="contact_section_2">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <div class="mail_section map_form_container">
-                     <form action="/" method="post">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <input type="text" class="mail_text" placeholder="Your Name" name="Your Name">
-                           </div>
-                           <div class="col-md-6">
-                              <input type="email" class="mail_text" placeholder="Email" name="Email">
-                           </div>
-                           <div class="col-md-6">
-                              <input type="number" class="mail_text" placeholder="Phone Number" name="Phone Number">
-                           </div>
-                           <div class="col-md-6">
-                              <textarea class="massage-bt" placeholder="Your  Words Message" rows="5" id="comment" name="Your  Words Message"></textarea>
-                           </div>
-                        </div>
-                        <div class="btn_main">
-                           <div class="send_bt active"><button type="submit" name="send" id="send">send</button></div>
-                        </div>
-                     </form>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- contact section end -->
-      <!-- testimonial section start -->
-      <div class="testimonial_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-12">
-                  <h1 class="testimonial_taital">Testimonial</h1>
-                  <p class="testimonial_text">page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed</p>
-               </div>
-            </div>
-            <div class="testimonial_section_2">
-               <div id="main_slider" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">
-                     <div class="carousel-item active">
-                        <div class="row">
-                           <div class="col-md-12">
-                              <div class="testimonial_main">
-                                 <div class="testimonial_left">
-                                    <div class="quick_icon"><img src="{%static 'images/quick-icon.png' %}"></div>
-                                 </div>
-                                 <div class="testimonial_middle">
-                                    <div class="border"></div>
-                                 </div>
-                                 <div class="testimonial_right">
-                                    <p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that</p>
-                                    <h3 class="client_text">Joniya mero</h3>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-md-12">
-                              <div class="testimonial_main">
-                                 <div class="testimonial_left">
-                                    <div class="quick_icon"><img src="{%static 'images/quick-icon.png' %}"></div>
-                                 </div>
-                                 <div class="testimonial_middle">
-                                    <div class="border"></div>
-                                 </div>
-                                 <div class="testimonial_right">
-                                    <p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that</p>
-                                    <h3 class="client_text">Joniya mero</h3>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                     <div class="carousel-item">
-                        <div class="row">
-                           <div class="col-md-12">
-                              <div class="testimonial_main">
-                                 <div class="testimonial_left">
-                                    <div class="quick_icon"><img src="{%static 'images/quick-icon.png' %}"></div>
-                                 </div>
-                                 <div class="testimonial_middle">
-                                    <div class="border"></div>
-                                 </div>
-                                 <div class="testimonial_right">
-                                    <p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that</p>
-                                    <h3 class="client_text">Joniya mero</h3>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-                  <i class="fa fa-angle-left"></i>
-                  </a>
-                  <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
-                  <i class="fa fa-angle-right"></i>
-                  </a>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- testimonial section end -->
-      <!-- footer section start -->
-      <div class="footer_section layout_padding">
-         <div class="container">
-            <div class="row">
-               <div class="col-lg-3 col-sm-6">
-                  <div class="footer_logo"><a href="index.html"><img src="{%static 'images/footer-logo.png' %}"></a></div>
-               </div>
-               <div class="col-lg-3 col-sm-6">
-                  <h3 class="useful_text">Useful Link</h3>
-                  <div class="footer_menu">
+   </div>
+   <!-- header_to section end -->
+   <!-- header section start -->
+   <div class="header_section">
+      <div class="container-fluid">
+         <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="/">
+               <h3 class="sitename">UENR STUDY PAGE</h3>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+               aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                     <a class="nav-link" href="/">Home</a>
+                  </li>
+                  {% if user.is_authenticated %}
+                  <li class="nav-item">
+                     <a class="nav-link" href="logout"> Logout</a>
+                  </li>
+                  {% else %}
+                  <li class="nav-item">
+                     <a class="nav-link" href="login">Login</a>
+                  </li>
+
+                  {% endif %}
+
+                  <li class="nav-item">
+                     <a class="nav-link" href="#contact">Contact Us</a>
+                  </li>
+               </ul>
+               <form class="form-inline my-2 my-lg-0">
+                  <div class="login_bt">
                      <ul>
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="insurances.html">Insurances</a></li>
-                        <li><a href="blog.html">Blog</a></li>
-                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <li><a href="#"><i class="fa fa-user" aria-hidden="true"></i></a></li>
                      </ul>
                   </div>
-               </div>
-               <div class="col-lg-3 col-sm-6">
-                  <h1 class="useful_text">Contact Us</h1>
-                  <div class="location_text">
-                     <ul>
-                        <li>
-                           <a href="#">
-                           <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_10">Location</span>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#">
-                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call : +01 1234567890</span>
-                           </a>
-                        </li>
-                        <li>
-                           <a href="#">
-                           <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">Email : demo@gmail.com</span>
-                           </a>
-                        </li>
-                     </ul>
+               </form>
+            </div>
+         </nav>
+      </div>
+
+
+      <!-- banner section start -->
+      <div class="banner_section layout_padding">
+         <div class="container-fluid1">
+            <div id="my_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital_main">
+                              <h1 class="banner_taital">We broaden your understanding</h1>
+                              <p class="banner_text">You will be one of the lucky people you have chosen us </p>
+                              <div class="btn_main">
+                                 <div class="started_text"><a href="#row" class="container">Read More</a></div>
+                                 <div class="started_text active"><a href="#row">Explore our books</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital_main">
+                              <h1 class="banner_taital">we are ready to make you a first class graduate</h1>
+                              <p class="banner_text">You will be one of the lucky people you have chosen us</p>
+                              <div class="btn_main">
+                                 <div class="started_text"><a href="#row">Read More</a></div>
+                                 <div class="started_text active"><a href="#row">Explore our books</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital_main">
+                              <h1 class="banner_taital">are you having difficulties with your studies ?</h1>
+                              <p class="banner_text">You will be one of the lucky people you have chosen us </p>
+                              <div class="btn_main">
+                                 <div class="started_text"><a href="#row">Read More</a></div>
+                                 <div class="started_text active"><a href="#row">Explore our library</a></div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
                   </div>
                </div>
-               <div class="col-lg-3 col-sm-6">
-                  <h2 class="useful_text">Newsletter</h2>
-                  <div class="form-group">
-                     <textarea class="update_mail" placeholder="Enter Your Email" rows="5" id="comment" name="Enter Your Email"></textarea>
-                     <div class="subscribe_bt"><a href="#">Subscribe</a></div>
-                  </div>
-                  <div class="footer_social_icon">
-                     <ul>
-                        <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                     </ul>
-                  </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+
+   <div>{%if user.is_authenticated%}
+      <p class="greet">welcome {{user.username}}</p>
+      {%else%}
+      <p>You are Offline</p>
+      {%endif%}
+      <p class="general">database</p>
+      
+
+   </div>
+   {%if user.is_authenticated%}
+   
+   
+   <div>
+
+      
+
+
+      <div class="most">
+         <div>
+            <a href="{% url 'blog' %}#database">
+               
+             <p class="topics">What is Database</p>
+             <p class="passage">A database is an organized collection of data, so that it can be easily accessed and managed.</p>
+               
+            </a>
+         </div>
+
+
+
+      </div>
+      <div class="most">
+         <div>
+            
+               
+             
+             <p class="topics">Types Of Database</p>
+             <a href="{% url 'blog' %}#centralized"><p class="passage">1) Centralized Database</p></a>
+             <a href="{% url 'blog' %}#distributed"><p class="passage">2) Distributed Database</p> </a>
+             <a href="{% url 'blog' %}#relational"><p class="passage">3) Relational Database</p></a>
+             <a href="{% url 'blog' %}#realtional"><p class="passage">4) NoSQL Database</p></a>
+             <a href="{% url 'blog' %}#relational"><p class="passage">5) Cloud Database</p></a>
+             <a href="{% url 'blog' %}#relational"><p class="passage">6) Object-oriented Databases</p></a>
+             <a href="{% url 'blog' %}#relational"><p class="passage">7) Hierarchical Databases</p></a>
+
+             <a href="{% url 'blog' %}#relational"><p class="passage">8) Network Databases</p></a>
+             
+               
+            
+         </div>
+
+
+
+      </div>
+      <div class="most">
+         <div>
+            
+               
+             <a href="https://www.javatpoint.com/what-is-rdbms"><p class="topics">What is RDBMS (Relational Database Management System)</p></a>
+             
+
+             
+               
+            
+         </div>
+
+
+
+      </div>
+      <div class="most">
+         <div>
+            <a href="https://www.javatpoint.com/what-is-rdbms">
+               
+             
+             
+             <p class="topics">DBMS Architecture</p>
+              
+             
+               
+            </a>
+         </div>
+
+
+
+      </div>
+      <div class="most">
+         <div>
+            <a href="https://www.javatpoint.com/what-is-rdbms">
+               
+             
+             
+             
+              <p class="topics">Three schema Architecture</p>
+             
+               
+            </a>
+         </div>
+
+
+
+      </div>
+      <div class="most">
+         <div>
+            <a href="https://www.javatpoint.com/what-is-rdbms">
+               
+             
+             
+             
+              
+             <p class="topics">Database Languages in DBMS</p>
+             
+               
+            </a>
+         </div>
+
+
+
+      </div>
+      <div class="most">
+         <div>
+            <a href="https://www.javatpoint.com/what-is-rdbms">
+               
+             
+             
+             
+              
+             
+             <p class="topics">Data Models </p>
+              
+               
+            </a>
+         </div>
+
+
+
+      </div>
+      <div class="most">
+         <div>
+            <a href="https://www.javatpoint.com/what-is-rdbms">
+               
+             
+             
+             
+              
+             
+              <p class="topics">ER (Entity Relationship) Diagram in DBMS</p>
+               
+            </a>
+         </div>
+
+
+
+      </div>
+   </div>
+  
+   {%else%}
+   
+   <div class="most">
+      <div>
+
+         
+         <p class="topics">What is Database</p>
+         <p class="topics">Types Of Database</p>
+         <p class="topics">What is RDBMS (Relational Database Management System)</p>
+         <p class="topics">DBMS Architecture</p>
+         <p class="topics"></p>
+         <p class="topics"></p>
+         <p class="topics"></p>
+         <p class="topics"></p>
+
+         
+
+         
+
+      </div>
+
+
+
+   </div>
+
+   
+   {%endif%}
+   
+
+   <!-- banner section end -->
+
+   <!-- about section end -->
+   <!-- blog section start -->
+
+   <!-- blog section end -->
+   <!-- insurance section start -->
+
+
+   <!-- insurance section end -->
+   <!-- contact section start -->
+
+   <!-- contact section end -->
+   <!-- testimonial section start -->
+
+   <!-- testimonial section end -->
+   <!-- footer section start -->
+   <div class="footer_section layout_padding">
+      <div class="container">
+         <div class="row">
+
+            <div class="col-lg-3 col-sm-6">
+               <h3 class="useful_text">Useful Link</h3>
+               <div class="footer_menu">
+                  <ul>
+
+                     {% if user.is_authenticated %}
+                     <li class="active"><a href="logout">Logout</a></li>
+
+                     {% else %}
+                     <li><a href="registration">Sign Up</a></li>
+                     {%endif%}
+
+                     <li><a href="#contact">Contact Us</a></li>
+                  </ul>
+               </div>
+            </div>
+
+            <div id="contact" class="col-lg-3 col-sm-6">
+               <h1 class="useful_text">Contact Us</h1>
+               <div class="location_text">
+                  <ul>
+                     <li>
+                        <a href="#">
+                           <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_10">Location
+                              Berekum</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call :
+                              +233205153645</span>
+                        </a>
+                     </li>
+                     <li>
+                        <a href="#">
+                           <div class="call_text_1"><a href="mailto:alimasalam02@gmail.com"><span
+                                    class="padding_15">Sokolonashiru@yahoo.com</span></div>
+                        </a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+
+               <div class="footer_social_icon">
+                  <ul>
+                     <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                     <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                  </ul>
                </div>
             </div>
          </div>
       </div>
-      <!-- footer section end -->
-      <!-- copyright section start -->
-      <div class="copyright_section">
-         <div class="container">
-            <p class="copyright_text">2024 All Rights Reserved. Design by <a href="https://html.design">Free html  Templates</a></p>
-         </div>
+   </div>
+   <!-- footer section end -->
+   <!-- copyright section start -->
+   <div class="copyright_section">
+      <div class="container">
+         <p class="copyright_text">2024 All Rights Reserved. Design by sokolo</p>
       </div>
-      <!-- copyright section end -->
-      <!-- Javascript files-->
-      <script src="{%static 'js/jquery.min.js' %}"></script>
-      <script src="{%static 'js/popper.min.js' %}"></script>
-      <script src="{%static 'js/bootstrap.bundle.min.js' %}"></script>
-      <script src="{%static 'js/jquery-3.0.0.min.js' %}"></script>
-      <script src="{%static 'js/plugin.js' %}"></script>
-      <!-- sidebar -->
-      <script src="{%static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
-      <script src="{%static 'js/custom.js' %}"></script>
-      <!-- javascript --> 
-      <script src="{%static 'js/owl.carousel.js' %}"></script>
-      <script src="{%static 'https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js' %}"></script>  
-      <script src="{%static 'https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js' %}" type="text/javascript"></script>
-   </body>
+   </div>
+   <!-- copyright section end -->
+   <!-- Javascript files-->
+   <script src="{%static 'js/jquery.min.js' %}"></script>
+   <script src="{%static 'js/popper.min.js' %}"></script>
+   <script src="{%static 'js/bootstrap.bundle.min.js' %}"></script>
+   <script src="{%static 'js/jquery-3.0.0.min.js' %}"></script>
+   <script src="{%static 'js/plugin.js' %}"></script>
+   <!-- sidebar -->
+   <script src="{%static 'js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+   <script src="{%static 'js/custom.js' %}"></script>
+   <!-- javascript -->
+   <script src="{%static 'js/owl.carousel.js' %}"></script>
+   <script src="{%static 'https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js' %}"></script>
+   <script src="{%static 'https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js' %}" type="text/javascript"></script>
+</body>
+
 </html>

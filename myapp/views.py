@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from django.contrib import messages,auth
 from django.contrib.auth.models import User
+from .models import course
 
 
 
@@ -8,10 +9,16 @@ from django.contrib.auth.models import User
 
 # Create your views here.
 def index(request):
+    courses=course.objects.all()
+     
+    
+    
+    
     return render(request,'index.html')
  
 
 def registration(request):
+    
     if request.method=='POST':
         username=request.POST['username']
         email=request.POST['email']
@@ -33,6 +40,7 @@ def registration(request):
             return redirect('registration')
     else:
         return render(request,'registration.html')
+    
 
           
 
@@ -50,15 +58,33 @@ def login(request):
     else:
         return render(request,'login.html')
 
+def logout(request):
+    auth.logout(request)
+    return redirect('/')
+
+def post(request, pk):
+    courses=course.objects.get(id=pk)
+
+    return render( request,'post.html',{'courses':courses})
+
+
+
+
+
 
 def blog(request):
+    courses=course.objects.all()
     
-    return render(request,'blog.html')
-
-
-
-
-
-def insurance(request):
     
-    return render(request,'insurance.html')
+
+    
+    return render(request,'blog.html',{'courses':courses})
+
+
+
+
+
+def images(request):
+    courses=course.objects.all()
+    
+    return render(request,'images.html',{'courses':courses})
